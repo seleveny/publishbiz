@@ -1,7 +1,11 @@
 import React from 'react';
-import { Flex, Layout } from 'antd';
+import {Flex, Image, Layout} from 'antd';
+import Contact from './contact';
+import Navigate from './navigate';
+import MultiText from './multiText.tsx';
 
-const { Header, Footer, Content } = Layout;
+const {Header, Footer, Content} = Layout;
+
 
 const headerStyle: React.CSSProperties = {
     textAlign: 'center',
@@ -9,7 +13,8 @@ const headerStyle: React.CSSProperties = {
     height: 64,
     paddingInline: 48,
     lineHeight: '64px',
-    backgroundColor: '#4096ff',
+    backgroundColor: '#fff',
+    marginLeft: 'calc(10vw)',
 };
 
 const contentStyle: React.CSSProperties = {
@@ -17,14 +22,16 @@ const contentStyle: React.CSSProperties = {
     minHeight: 120,
     lineHeight: '120px',
     color: '#fff',
-    backgroundColor: '#0958d9',
+    backgroundColor: '#161617CC',
+    overflow: 'auto'
 };
 
 const footerStyle: React.CSSProperties = {
     textAlign: 'center',
     color: '#fff',
-    backgroundColor: '#4096ff',
+    backgroundColor: '#777777',
 };
+
 
 const layoutStyle = {
     borderRadius: 8,
@@ -32,14 +39,37 @@ const layoutStyle = {
     width: 'calc(100vw)',
     height: 'calc(100vh)',
     maxWidth: 'calc(100%)',
+    backgroundColor: '#fff',
+};
+
+const iconStyle: React.CSSProperties = {
+    paddingRight: 16,
+    width: '40px',
+    height: '20px',
 };
 
 const App: React.FC = () => (
     <Flex gap="middle" wrap>
         <Layout style={layoutStyle}>
-            <Header style={headerStyle}>Header</Header>
-            <Content style={contentStyle}>Content</Content>
-            <Footer style={footerStyle}>Footer</Footer>
+            {/*头部内容*/}
+            <Header style={headerStyle}>
+                <Flex>
+                    <Image src="../pic/logo.jpeg" preview={false} style={iconStyle}/>
+                    <Navigate/>
+                </Flex>
+            </Header>
+            {/*主体内容*/}
+            <Content style={contentStyle}>
+                <Flex vertical={true} wrap={false}>
+                    <MultiText/>
+                </Flex>
+            </Content>
+            {/*底部内容*/}
+            <Footer style={footerStyle}>
+
+            </Footer>
+            {/*联系我们*/}
+            <Contact/>
         </Layout>
     </Flex>
 );
