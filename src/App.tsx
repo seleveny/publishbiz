@@ -13,8 +13,7 @@ const headerStyle: React.CSSProperties = {
     height: 64,
     paddingInline: 48,
     lineHeight: '64px',
-    backgroundColor: '#fff',
-    marginLeft: 'calc(10vw)',
+    backgroundColor: 'black',
 };
 
 const contentStyle: React.CSSProperties = {
@@ -22,34 +21,36 @@ const contentStyle: React.CSSProperties = {
     minHeight: 120,
     lineHeight: '120px',
     color: '#fff',
-    backgroundColor: '#161617CC',
-    overflow: 'auto'
+    backgroundColor: 'white',
+    // 隐藏滚动条
+    scrollbarWidth: 'none',
 };
 
 const footerStyle: React.CSSProperties = {
     textAlign: 'center',
     color: '#fff',
-    backgroundColor: '#777777',
+    backgroundColor: 'black',
+    scrollbarWidth: 'none',
 };
 
 
-const layoutStyle = {
-    borderRadius: 8,
-    overflow: 'hidden',
+const layoutStyle : React.CSSProperties = {
+    overflow: 'auto',
     width: 'calc(100vw)',
     height: 'calc(100vh)',
-    maxWidth: 'calc(100%)',
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
+    scrollbarWidth: 'none',
 };
 
 const iconStyle: React.CSSProperties = {
-    paddingRight: 16,
-    width: '40px',
-    height: '20px',
+    marginLeft: 16,
+    marginRight: 32,
+    width: '26px',
+    height: '26px',
 };
 
 const App: React.FC = () => (
-    <Flex gap="middle" wrap>
+    <Flex gap="middle" vertical>
         <Layout style={layoutStyle}>
             {/*头部内容*/}
             <Header style={headerStyle}>
@@ -60,13 +61,15 @@ const App: React.FC = () => (
             </Header>
             {/*主体内容*/}
             <Content style={contentStyle}>
-                <Flex vertical={true} wrap={false}>
+                <Flex vertical={true} wrap={true}>
                     <MultiText/>
                 </Flex>
             </Content>
             {/*底部内容*/}
             <Footer style={footerStyle}>
-
+                <Flex vertical={true} wrap={true}>
+                    @图书出版有限公司
+                </Flex>
             </Footer>
             {/*联系我们*/}
             <Contact/>

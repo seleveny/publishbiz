@@ -1,15 +1,18 @@
 import React from 'react';
-import {Image, Typography} from "antd";
+import {Typography} from "antd";
 import ServiceItem from "./serviceItem.tsx";
 
 const {Title} = Typography;
 
 const publishImageStyle: React.CSSProperties = {
+    width: 'calc(96vw)',
+    height: 'calc(90vh)',
     borderRadius: '20px',
     borderTopLeftRadius: '20px',
     borderTopRightRadius: '20px',
     borderBottomLeftRadius: '20px',
     borderBottomRightRadius: '20px',
+    background: 'linear-gradient(45deg, #3f51b5, #9c27b0)', // 这里是渐变色的示例
 }
 
 const textStyle : React.CSSProperties = {
@@ -88,7 +91,7 @@ const serviceItems = [
 const ServiceText: React.FC = () => {
     return (
         <div style={MultiStyle}>
-            <Image src={"../pic/bookpub.jpg"} style={publishImageStyle} preview={false}></Image>
+            <div style={publishImageStyle}></div>
             <Title style={textStyle}>服务项目</Title>
             <div style={ServiceItemStyle}>
                 {serviceItems.map((item, index) => (

@@ -1,0 +1,26 @@
+/*导航栏*/
+
+.ant-menu-dark.ant-menu-horizontal >.ant-menu-item {
+    background-color: black;
+    color: white;
+}
+
+.ant-menu-dark.ant-menu-horizontal >.ant-menu-item:hover {
+    background-color: dodgerblue;
+}
+.ant-menu-dark.ant-menu-horizontal >.ant-menu-item-active,
+.ant-menu-dark.ant-menu-horizontal >.ant-menu-item-open,
+.ant-menu-dark.ant-menu-horizontal >.ant-menu-item-selected {
+    color: white;
+}
+.custom-menu {
+}
+
+.custom-menu-item {
+
+}
+
+/*出版流程*/
+.children-text-style {
+    font-size: 40px;
+}

@@ -1,14 +1,18 @@
 import React from 'react';
-import {Image, Typography} from "antd";
+import {Typography} from "antd";
 
 const {Title} = Typography;
 
 const publishImageStyle: React.CSSProperties = {
+    width: 'calc(96vw)',
+    height: 'calc(90vh)',
     borderRadius: '20px',
     borderTopLeftRadius: '20px',
     borderTopRightRadius: '20px',
     borderBottomLeftRadius: '20px',
     borderBottomRightRadius: '20px',
+    background: 'linear-gradient(45deg, #E8B7D4, #33539E)', // 这里是渐变色的示例
+
 }
 
 const textStyle: React.CSSProperties = {
@@ -30,7 +34,7 @@ const MultiStyle: React.CSSProperties = {
 const CooperateType: React.FC = () => {
     return (
         <div style={MultiStyle}>
-            <Image src={"../pic/bookpub.jpg"} style={publishImageStyle} preview={false}></Image>
+            <div style={publishImageStyle} />
             <Title style={textStyle}>合作方式</Title>
         </div>
     );
