@@ -8,6 +8,7 @@ const {Header, Footer, Content} = Layout;
 
 
 const headerStyle: React.CSSProperties = {
+    display: 'flex',
     textAlign: 'center',
     color: '#fff',
     height: 64,
@@ -34,12 +35,12 @@ const footerStyle: React.CSSProperties = {
 };
 
 
-const layoutStyle : React.CSSProperties = {
+const layoutStyle: React.CSSProperties = {
+    display: 'flex',
+    flexDirection: 'column',
     overflow: 'auto',
     width: 'calc(100vw)',
-    height: 'calc(100vh)',
     backgroundColor: 'white',
-    scrollbarWidth: 'none',
 };
 
 const iconStyle: React.CSSProperties = {
@@ -50,30 +51,28 @@ const iconStyle: React.CSSProperties = {
 };
 
 const App: React.FC = () => (
-    <Flex gap="middle" vertical>
-        <Layout style={layoutStyle}>
-            {/*头部内容*/}
-            <Header style={headerStyle}>
-                <Flex>
-                    <Image src="../pic/logo.jpeg" preview={false} style={iconStyle}/>
-                    <Navigate/>
-                </Flex>
-            </Header>
-            {/*主体内容*/}
-            <Content style={contentStyle}>
-                <Flex vertical={true} wrap={true}>
-                    <MultiText/>
-                </Flex>
-            </Content>
-            {/*底部内容*/}
-            <Footer style={footerStyle}>
-                <Flex vertical={true} wrap={true}>
-                    @图书出版有限公司
-                </Flex>
-            </Footer>
-            {/*联系我们*/}
-            <Contact/>
-        </Layout>
+    <Flex gap="middle" style={layoutStyle} vertical>
+        {/*头部内容*/}
+        <Header style={headerStyle}>
+            <Flex>
+                <Image src="../pic/logo.jpeg" preview={false} style={iconStyle}/>
+                <Navigate/>
+            </Flex>
+        </Header>
+        {/*主体内容*/}
+        <Content style={contentStyle}>
+            <Flex vertical={true} wrap={true}>
+                <MultiText/>
+            </Flex>
+        </Content>
+        {/*底部内容*/}
+        <Footer style={footerStyle}>
+            <Flex vertical={true} wrap={true}>
+                京口区书童办公服务工作室
+            </Flex>
+        </Footer>
+        {/*联系我们*/}
+        <Contact/>
     </Flex>
 );
 

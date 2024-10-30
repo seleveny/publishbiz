@@ -33,58 +33,43 @@ const MultiStyle: React.CSSProperties = {
 
 const ServiceItemStyle: React.CSSProperties = {
     position: 'absolute',
-    paddingTop: 'calc(10%)',
-    width: 'calc(60%)',
-    height: 'calc(90%)',
+    paddingTop: 'calc(10vh)',
+    width: 'calc(80vw)',
+    height: 'calc(80vh)',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     justifyItems: 'space-evenly',
     justifyContent: 'center',
-    columnGap: 'calc(5%)',
+    columnGap: 'calc(2vw)',
     flexWrap: 'wrap',
 }
 
 const serviceItems = [
     {
-        title: '服务项目1',
-        description: '服务项目1的描述',
+        title: '专著出版',
+        description: '',
         image: '../pic/1.jpg',
     },
     {
-        title: '服务项目2',
-        description: '服务项目2的描述',
+        title: '教辅/教材出版',
+        description: '',
         image: '../pic/2.jpg',
     },
     {
-        title: '服务项目3',
-        description: '服务项目1的描述',
+        title: '杂志书籍出版',
+        description: '',
         image: '../pic/3.jpg',
     },
     {
-        title: '服务项目4',
-        description: '服务项目4的描述',
+        title: '科普图书出版',
+        description: '',
         image: '../pic/4.jpg',
     },
     {
-        title: '服务项目5',
-        description: '服务项目5的描述',
+        title: '大众图书出版',
+        description: '',
         image: '../pic/5.jpg',
-    },
-    {
-        title: '服务项目6',
-        description: '服务项目6的描述',
-        image: '../pic/6.jpg',
-    },
-    {
-        title: '服务项目7',
-        description: '服务项目7的描述',
-        image: '../pic/7.jpg',
-    },
-    {
-        title: '服务项目8',
-        description: '服务项目8的描述',
-        image: '../pic/8.jpg',
     }
 ]
 

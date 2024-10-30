@@ -6,6 +6,9 @@ import PublishSeq from "./publishSeq.tsx";
 const publishImageStyle: React.CSSProperties = {
     paddingLeft: 'calc(2vw)',
     paddingRight: 'calc(2vw)',
+    display: 'flex',
+    flexDirection: 'column',
+    overflow: 'hidden',
 }
 
 const MultiText: React.FC = () => {
