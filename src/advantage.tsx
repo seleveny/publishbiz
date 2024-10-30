@@ -11,7 +11,7 @@ const publishImageStyle: React.CSSProperties = {
     borderTopRightRadius: '20px',
     borderBottomLeftRadius: '20px',
     borderBottomRightRadius: '20px',
-    background: 'linear-gradient(45deg,  #F66072, #2CCAE9)', // 这里是渐变色的示例
+    background: 'linear-gradient(45deg,  #009B8D, #FCD301)', // 这里是渐变色的示例
 
 }
 
@@ -31,7 +31,7 @@ const MultiStyle: React.CSSProperties = {
     position: 'relative',
 }
 
-const CooperateTypeStyle: React.CSSProperties = {
+const AdvantageTypeStyle: React.CSSProperties = {
     display: 'flex',
     position: 'absolute',
     marginTop: 'calc(12vh)',
@@ -41,7 +41,7 @@ const CooperateTypeStyle: React.CSSProperties = {
     justifyContent: 'center',
 }
 
-const CorpTypeStyle: React.CSSProperties = {
+const AdvantageItemStyle: React.CSSProperties = {
     fontSize: '14rem',
     color: 'transparent', // 设置字体颜色为透明
     backgroundClip: 'text', // 裁剪背景到文字
@@ -50,16 +50,16 @@ const CorpTypeStyle: React.CSSProperties = {
     marginBottom: '2rem'
 }
 
-const CooperateType: React.FC = () => {
+const Advantage: React.FC = () => {
     return (
         <div style={MultiStyle}>
             <div style={publishImageStyle}/>
-            <Title style={textStyle}>合作方式</Title>
-            <Flex style={CooperateTypeStyle}>
-                <Title style={CorpTypeStyle}>自费    or    公费</Title>
+            <Title style={textStyle}>业务优势</Title>
+            <Flex style={AdvantageTypeStyle}>
+                <Title style={AdvantageItemStyle}></Title>
             </Flex>
         </div>
     );
 };
 
-export default CooperateType;
+export default Advantage;

@@ -20,6 +20,10 @@
 
 }
 
+/*文化展示*/
+.ant-card-head-title {
+    color: white;
+}
 /*出版流程*/
 .children-text-style {
     font-size: 40px;

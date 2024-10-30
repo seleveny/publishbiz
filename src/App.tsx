@@ -1,6 +1,5 @@
 import React from 'react';
 import {Flex, Image, Layout} from 'antd';
-import Contact from './contact';
 import Navigate from './navigate';
 import MultiText from './multiText.tsx';
 
@@ -23,15 +22,12 @@ const contentStyle: React.CSSProperties = {
     lineHeight: '120px',
     color: '#fff',
     backgroundColor: 'white',
-    // 隐藏滚动条
-    scrollbarWidth: 'none',
 };
 
 const footerStyle: React.CSSProperties = {
     textAlign: 'center',
     color: '#fff',
     backgroundColor: 'black',
-    scrollbarWidth: 'none',
 };
 
 
@@ -71,8 +67,6 @@ const App: React.FC = () => (
                 京口区书童办公服务工作室
             </Flex>
         </Footer>
-        {/*联系我们*/}
-        <Contact/>
     </Flex>
 );
 

@@ -1,23 +1,26 @@
 import React from "react";
 import {Card, Image, Space} from 'antd';
+import './App.css';
 
 
 const flyStyle: React.CSSProperties = {
-    position: 'fixed',
-    bottom: 0,
-    right: 0,
-    paddingBottom: 16,
-    paddingRight: 16,
+    display: 'flex',
+    position: 'absolute',
+    bottom: 'calc(10vh)',
+    right: 'calc(10vw)',
     color: '#fff',
 };
 
 const cardStyle: React.CSSProperties = {
     textAlign: 'center',
+    color: 'white',
+    backgroundColor: 'transparent',
 }
 
 const imageStyle: React.CSSProperties = {
     width: '80px',
     height: '80px',
+    backgroundColor: 'transparent',
 }
 
 const Contact: React.FC = () => {

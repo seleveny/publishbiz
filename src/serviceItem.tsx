@@ -12,7 +12,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({image, title, description}) =>
     return (
             <Card
                 hoverable
-                style={{width: "calc(12vw)", height: 'calc(16vw)'}}
+                style={{width: "calc(12vw)", height: 'calc(18vw)'}}
                 cover={<img src={image} alt="example" style={{height: 'auto', width: 'auto'}} /> }
             >
                 <Meta title={title} description={description}/>

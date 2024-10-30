@@ -1,13 +1,12 @@
 import React from 'react';
-import {Timeline} from "antd";
+import {StepProps, Steps} from "antd";
 import './App.css';
 
 const PublishSeqStyle: React.CSSProperties = {
     position: 'absolute',
-    paddingTop: 'calc(20%)',
-    paddingRight: 'calc(10%)',
-    width: 'calc(60%)',
-    height: 'calc(60%)',
+    paddingTop: 'calc(20vh)',
+    width: 'calc(60vw)',
+    height: 'calc(60vh)',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -15,57 +14,68 @@ const PublishSeqStyle: React.CSSProperties = {
     flexWrap: 'wrap',
 }
 
-const contentStyle: React.CSSProperties = {
-    position: "absolute",
-    textAlign: "left",
+const stepStyle: React.CSSProperties = {
+    justifyContent: 'space-around',
+    width: 'calc(100vw)',
 }
 
-const childrenStyle: React.CSSProperties = {
-    fontSize: 30,
-}
-
-const items = [
+const items: StepProps[] = [
     {
-        children: '稿件初审',
-        style: childrenStyle
+        title: '交稿预审',
+        status: 'process',
+        description: '',
     },
     {
-        children: '商定出版社',
-        style: childrenStyle,
+        title: '商定出版社',
+        status: 'process',
+        description: '',
     },
     {
-        children: '签订合同',
-        style: childrenStyle,
+        title: '签订合同',
+        status: 'process',
+        description: '',
     },
     {
-        children: '交付书稿',
-        style: childrenStyle,
+        title: '申领书号',
+        status: 'process',
+        description: '',
     },
     {
-        children: '排版出版',
-        style: childrenStyle,
+        title: '三审三校',
+        status: 'process',
+        description: '',
     },
     {
-        children: '定稿',
-        style: childrenStyle,
+        title: '封面设计',
+        status: 'process',
+        description: '',
+    },{
+        title: '质检验证',
+        status: 'process',
+        description: '',
     },
     {
-        children: '验证',
-        style: childrenStyle,
+        title: '定稿',
+        status: 'process',
+        description: '',
     },
     {
-        children: '收获',
-        style: childrenStyle,
-    }
+        title: '出版',
+        status: 'process',
+        description: '',
+    },
 ]
 
 const PublishItem: React.FC = () => {
     return (
         <div style={PublishSeqStyle}>
-            <Timeline
-                mode="left"
+            <Steps
+                type="navigation"
+                size="default"
+                style={stepStyle}
+                current={-1}
+                labelPlacement="vertical"
                 items={items}
-                style={contentStyle}
             />
         </div>
     );

@@ -12,11 +12,12 @@ const publishImageStyle: React.CSSProperties = {
     borderTopRightRadius: '20px',
     borderBottomLeftRadius: '20px',
     borderBottomRightRadius: '20px',
-    background: 'linear-gradient(45deg,#FC0000, #D0E6A5)', // 这里是渐变色的示例
+    background: 'linear-gradient(0deg,#969087, #E1D2BB)', // 这里是渐变色的示例
 }
 
+
 const textStyle: React.CSSProperties = {
-    marginTop: 20,
+    marginTop: 'calc(8vh)',
     marginBottom: 0,
     position: 'absolute',
     alignItems: 'center',
@@ -24,7 +25,7 @@ const textStyle: React.CSSProperties = {
 }
 
 const MultiStyle: React.CSSProperties = {
-    marginTop: 20,
+    marginTop: 'calc(2vh)',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
