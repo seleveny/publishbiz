@@ -51,7 +51,7 @@ const containTextStyle: React.CSSProperties = {
     paddingTop: '1rem',
 };
 
-const cooperateTextStyle : React.CSSProperties = {
+const cooperateTextStyle: React.CSSProperties = {
     fontSize: '2rem',
     position: 'relative',
 }

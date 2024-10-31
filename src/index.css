@@ -1,16 +1,16 @@
 :root {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-  scrollbar-width: none;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    scrollbar-width: none;
 }
 
 
 body {
-  margin: 0;
-  display: flex;
-  flex: 1; /* 让 body 元素填充 :root 元素的剩余空间 */
-  padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1; /* 让 body 元素填充 :root 元素的剩余空间 */
+    padding: 0;
 }

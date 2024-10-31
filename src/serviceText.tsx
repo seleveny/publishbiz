@@ -15,7 +15,7 @@ const publishImageStyle: React.CSSProperties = {
     background: 'linear-gradient(45deg, #3f51b5CC, #f06292CC)', // 这里是渐变色的示例
 }
 
-const textStyle : React.CSSProperties = {
+const textStyle: React.CSSProperties = {
     marginTop: 'calc(8vh)',
     fontSize: '3rem',
     marginBottom: 0,

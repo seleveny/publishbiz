@@ -44,10 +44,10 @@ const MultiStyle: React.CSSProperties = {
 const CulturalShow: React.FC = () => {
     return (
         <div style={MultiStyle}>
-            <div style={publishImageStyle} />
+            <div style={publishImageStyle}/>
             <Title style={textStyle}>图书出版</Title>
             <Title style={subTextStyle}>小小书童，为您服务！</Title>
-            <Contact />
+            <Contact/>
         </div>
     );
 };

@@ -19,7 +19,7 @@ const MultiText: React.FC = () => {
         <div style={publishImageStyle}>
             <CulturalShow/>
             <ServiceText/>
-            <Advantage />
+            <Advantage/>
             <CooperateType/>
             <PublishSeq/>
         </div>

@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
     return (
         <Space style={flyStyle}>
             <Card title="联系我们" bordered={true} style={cardStyle} headStyle={headerStyle} bodyStyle={bodyStyle}>
-                <Image src="../pic/contact.png" style={imageStyle} preview={false} />
+                <Image src="../pic/contact.png" style={imageStyle} preview={false}/>
             </Card>
         </Space>
     );
