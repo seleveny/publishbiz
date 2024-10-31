@@ -17,6 +17,7 @@ const publishImageStyle: React.CSSProperties = {
 
 const textStyle: React.CSSProperties = {
     marginTop: 'calc(8vh)',
+    fontSize: '3rem',
     marginBottom: 0,
     position: 'absolute',
     alignItems: 'center',
@@ -34,8 +35,7 @@ const MultiStyle: React.CSSProperties = {
 const CooperateTypeStyle: React.CSSProperties = {
     display: 'flex',
     position: 'absolute',
-    marginTop: 'calc(12vh)',
-    height: 'calc(70vh)',
+    marginTop: 'calc(20vh)',
     width: 'calc(100vw)',
     alignItems: 'center',
     justifyContent: 'center',
@@ -47,7 +47,6 @@ const CorpTypeStyle: React.CSSProperties = {
     backgroundClip: 'text', // 裁剪背景到文字
     WebkitBackgroundClip: 'text', // 兼容 WebKit 浏览器
     backgroundImage: 'linear-gradient(90deg, #3f51b5, #9c27b0)', // 这里是渐变色的示例
-    marginBottom: '2rem'
 }
 
 const CooperateType: React.FC = () => {

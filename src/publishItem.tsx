@@ -4,9 +4,9 @@ import './App.css';
 
 const PublishSeqStyle: React.CSSProperties = {
     position: 'absolute',
-    paddingTop: 'calc(35vh)',
+    marginTop: 'calc(20vh)',
     width: 'calc(60vw)',
-    height: 'calc(60vh)',
+    height: 'calc(80vh)',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -15,7 +15,7 @@ const PublishSeqStyle: React.CSSProperties = {
 }
 
 const stepStyle: React.CSSProperties = {
-    justifyContent: 'space-around',
+    justifyContent: 'space-evenly',
     width: 'calc(100vw)',
 }
 

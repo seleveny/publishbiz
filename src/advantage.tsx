@@ -17,6 +17,7 @@ const publishImageStyle: React.CSSProperties = {
 
 const textStyle: React.CSSProperties = {
     marginTop: 'calc(8vh)',
+    fontSize: '3rem',
     marginBottom: 0,
     position: 'absolute',
     alignItems: 'center',
@@ -33,21 +34,27 @@ const MultiStyle: React.CSSProperties = {
 
 const AdvantageTypeStyle: React.CSSProperties = {
     display: 'flex',
+    flexDirection: 'row',
     position: 'absolute',
-    marginTop: 'calc(12vh)',
-    height: 'calc(70vh)',
-    width: 'calc(100vw)',
+    marginTop: 'calc(30vh)',
+    width: 'calc(90vw)',
     alignItems: 'center',
     justifyContent: 'center',
+    justifyItems: 'space-evenly',
+    columnGap: 'calc(5vw)',
+    rowGap: '0px',
+    flexWrap: 'wrap',
+    gap: '4rem',
 }
 
 const AdvantageItemStyle: React.CSSProperties = {
-    fontSize: '14rem',
-    color: 'transparent', // 设置字体颜色为透明
-    backgroundClip: 'text', // 裁剪背景到文字
-    WebkitBackgroundClip: 'text', // 兼容 WebKit 浏览器
-    backgroundImage: 'linear-gradient(90deg, #3f51b5, #9c27b0)', // 这里是渐变色的示例
-    marginBottom: '2rem'
+    color: 'white',
+    textAlign: 'center',
+    fontSize: '4rem',
+    border: '3px dashed white',
+    fontStyle: 'italic',
+    padding: '1rem',
+    borderRadius: '1rem',
 }
 
 const Advantage: React.FC = () => {
@@ -56,7 +63,13 @@ const Advantage: React.FC = () => {
             <div style={publishImageStyle}/>
             <Title style={textStyle}>业务优势</Title>
             <Flex style={AdvantageTypeStyle}>
-                <Title style={AdvantageItemStyle}></Title>
+                <div style={AdvantageItemStyle}>正规流程</div>
+                <div style={AdvantageItemStyle}>一书一号</div>
+                <div style={AdvantageItemStyle}>费用合理</div>
+                <div style={AdvantageItemStyle}>出版高效</div>
+                <div style={AdvantageItemStyle}>质量保证</div>
+                <div style={AdvantageItemStyle}>学科范围广</div>
+                <div style={AdvantageItemStyle}>退稿率低</div>
             </Flex>
         </div>
     );

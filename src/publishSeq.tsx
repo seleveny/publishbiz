@@ -12,12 +12,13 @@ const publishImageStyle: React.CSSProperties = {
     borderTopRightRadius: '20px',
     borderBottomLeftRadius: '20px',
     borderBottomRightRadius: '20px',
-    background: 'linear-gradient(0deg,#FFFF00, #494268)', // 这里是渐变色的示例
+    background: 'linear-gradient(0deg,#FFFF00, #9c27b0)', // 这里是渐变色的示例
 }
 
 
 const textStyle: React.CSSProperties = {
     marginTop: 'calc(8vh)',
+    fontSize: '3rem',
     marginBottom: 0,
     position: 'absolute',
     alignItems: 'center',

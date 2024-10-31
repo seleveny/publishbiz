@@ -11,8 +11,7 @@ const headerStyle: React.CSSProperties = {
     display: 'flex',
     textAlign: 'center',
     color: '#fff',
-    height: 64,
-    lineHeight: '64px',
+    height: '64px',
     backgroundColor: 'black',
 };
 
