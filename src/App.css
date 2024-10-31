@@ -2,7 +2,9 @@
 .ant-layout-header {
     padding: 0;
 }
-
+.ant-menu-dark {
+    background: black;
+}
 .ant-menu-dark.ant-menu-horizontal >.ant-menu-item {
     background-color: black;
     color: white;
@@ -16,12 +18,6 @@
 .ant-menu-dark.ant-menu-horizontal >.ant-menu-item-selected {
     color: white;
 }
-.custom-menu {
-}
-
-.custom-menu-item {
-
-}
 
 /*文化展示*/
 .ant-card-head-title {
@@ -29,6 +25,3 @@
 }
 
 /*出版流程*/
-.children-text-style {
-    font-size: 40px;
-}

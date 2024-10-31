@@ -49,7 +49,7 @@ const App: React.FC = () => (
     <Flex gap="middle" style={layoutStyle} vertical>
         {/*头部内容*/}
         <Header style={headerStyle}>
-            <Flex>
+            <Flex vertical={true} wrap={true}>
                 <Image src="../pic/logo.png" preview={false} style={iconStyle}/>
                 <Navigate/>
             </Flex>

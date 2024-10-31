@@ -37,10 +37,15 @@ const items: MenuItem[] = [
     }
 ];
 
+const NavigateStyle: React.CSSProperties = {
+    width: 'calc(85vw - 40px)',
+    backgroundColor: 'transparent',
+}
+
 
 const Navigate: React.FC = () => {
     return (
-        <Menu mode="horizontal" className="custom-menu" theme={"dark"} items={items}/>
+        <Menu mode="horizontal" style={NavigateStyle} theme={"dark"} items={items}/>
     );
 };
 
