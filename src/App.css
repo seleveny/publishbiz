@@ -26,7 +26,7 @@
 
 /*服务项目*/
 .ant-card-animation:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: transform 0.3s ease;
     box-shadow:
             0 0 1px 0 #ffffff, /* 内圈光晕 */
