@@ -62,7 +62,7 @@ const AdvantageSpecialItemStyle: React.CSSProperties = {
     color: 'white',
     textAlign: 'center',
     fontSize: '4rem',
-    border: '3px dashed white',
+    border: '3px solid white',
     fontStyle: 'italic',
     padding: '1rem',
     borderRadius: '1rem',

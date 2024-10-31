@@ -1,5 +1,5 @@
 import React from 'react';
-import {Flex, Typography} from "antd";
+import {Col, Flex, Row, Typography} from "antd";
 
 const {Title} = Typography;
 
@@ -34,20 +34,21 @@ const MultiStyle: React.CSSProperties = {
 
 const CooperateTypeStyle: React.CSSProperties = {
     display: 'flex',
+    marginTop: 'calc(8vh + 3rem)',
     position: 'absolute',
-    marginTop: 'calc(20vh)',
-    width: 'calc(100vw)',
+    width: 'calc(90vw)',
+    height: 'calc(82vh - 3rem)',
     alignItems: 'center',
     justifyContent: 'center',
 }
 
-const CorpTypeStyle: React.CSSProperties = {
-    fontSize: '14rem',
-    color: 'transparent', // 设置字体颜色为透明
-    backgroundClip: 'text', // 裁剪背景到文字
-    WebkitBackgroundClip: 'text', // 兼容 WebKit 浏览器
-    backgroundImage: 'linear-gradient(90deg, #FFFFFF, #000000)', // 这里是渐变色的示例
-}
+const style: React.CSSProperties = {
+    background: '#FFFFFF',
+    minWidth:'calc(25vw)',
+    height: 'calc(60vh)',
+    textAlign: 'center',
+    borderRadius: '1rem',
+};
 
 const CooperateType: React.FC = () => {
     return (
@@ -55,7 +56,17 @@ const CooperateType: React.FC = () => {
             <div style={publishImageStyle}/>
             <Title style={textStyle}>合作方式</Title>
             <Flex style={CooperateTypeStyle}>
-                <Title style={CorpTypeStyle}>自费    or    公费</Title>
+                <Row gutter={24}>
+                    <Col className="gutter-row" span={8}>
+                        <div style={style}>col-6</div>
+                    </Col>
+                    <Col className="gutter-row" span={8}>
+                        <div style={style}>col-6</div>
+                    </Col>
+                    <Col className="gutter-row" span={8}>
+                        <div style={style}>col-6</div>
+                    </Col>
+                </Row>
             </Flex>
         </div>
     );
