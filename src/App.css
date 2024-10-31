@@ -3,15 +3,20 @@
     padding: 0;
 }
 .ant-menu-dark {
-    background: black;
+    background: #161617CC;
 }
+
+.ant-menu-dark.ant-menu-horizontal {
+    background-color: transparent;
+}
+
 .ant-menu-dark.ant-menu-horizontal >.ant-menu-item {
-    background-color: black;
+    background-color: transparent;
     color: white;
 }
 
 .ant-menu-dark.ant-menu-horizontal >.ant-menu-item:hover {
-    background-color: dodgerblue;
+    background-color: #007BFFCC;
 }
 .ant-menu-dark.ant-menu-horizontal >.ant-menu-item-active,
 .ant-menu-dark.ant-menu-horizontal >.ant-menu-item-open,

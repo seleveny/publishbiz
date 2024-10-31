@@ -11,7 +11,7 @@ const publishImageStyle: React.CSSProperties = {
     borderTopRightRadius: '20px',
     borderBottomLeftRadius: '20px',
     borderBottomRightRadius: '20px',
-    background: 'linear-gradient(45deg,  #3f51b5CC, #ff6f00CC)', // 这里是渐变色的示例
+    background: 'linear-gradient(-45deg,  #3f51b5CC, #ff6f00CC)', // 这里是渐变色的示例
 
 }
 
@@ -66,9 +66,7 @@ const AdvantageSpecialItemStyle: React.CSSProperties = {
     fontStyle: 'italic',
     padding: '1rem',
     borderRadius: '1rem',
-    backgroundClip: 'text', // 裁剪背景到文字
-    WebkitBackgroundClip: 'text', // 兼容 WebKit 浏览器
-    backgroundImage: 'linear-gradient(90deg, #3f51b5CC, #9c27b0CC)', // 这里是渐变色的示例
+    backgroundColor: '#FF6600CC', // 这里是渐变色的示例
 }
 
 const Advantage: React.FC = () => {

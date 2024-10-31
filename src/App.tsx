@@ -12,7 +12,7 @@ const headerStyle: React.CSSProperties = {
     textAlign: 'center',
     color: '#fff',
     height: '64px',
-    backgroundColor: 'black',
+    backgroundColor: '#000000CC',
 };
 
 const contentStyle: React.CSSProperties = {
