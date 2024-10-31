@@ -24,6 +24,16 @@
     color: white;
 }
 
+/*服务项目*/
+.ant-card-animation:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow:
+            0 0 1px 0 #ffffff, /* 内圈光晕 */
+            0 0 2px 0 #ffffffcc, /* 外圈光晕 */
+            0 0 4px 0 #ffffffcc, /* 最外圈光晕 */
+            0 0 8px 0 #ffffffcc; /* 最外层光晕 */
+}
 /*文化展示*/
 .ant-card-head-title {
     color: white;

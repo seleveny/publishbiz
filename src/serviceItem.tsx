@@ -15,6 +15,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({image, title, description}) =>
                 hoverable
                 style={{minWidth: "calc(12vw)", height: 'calc(18vw)'}}
                 cover={<img src={image} alt="example" style={{height: 'auto', width: 'auto'}} /> }
+                className="ant-card-animation"
             >
                 <Meta title={title} description={description} className="ant-card-meta-title"/>
             </Card>
