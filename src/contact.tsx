@@ -6,9 +6,8 @@ import './App.css';
 const flyStyle: React.CSSProperties = {
     display: 'flex',
     position: 'absolute',
-    bottom: 'calc(10vh)',
-    right: 'calc(10vw)',
     color: '#fff',
+    marginTop: 'calc(60vh)',
 };
 
 const cardStyle: React.CSSProperties = {
@@ -23,8 +22,8 @@ const cardStyle: React.CSSProperties = {
 
 const imageStyle: React.CSSProperties = {
     display: 'flex',
-    width: 'calc(6vw)',
-    height: 'calc(6vw)',
+    width: 'calc(7vw)',
+    height: 'calc(7vw)',
     backgroundColor: 'transparent',
 }
 
@@ -34,9 +33,9 @@ const headerStyle: React.CSSProperties = {
 };
 
 const bodyStyle: React.CSSProperties = {
-    padding: '10px',
-    paddingTop: 'calc(2vh)',
+    paddingTop: 'calc(1vw)',
     alignItems: 'center',
+    justifyContent: 'center',
     height: '40%', // 设置 Body 高度为 70%
     backgroundColor: 'transparent', // 设置 Body 背景色为半透明黑色
 };
