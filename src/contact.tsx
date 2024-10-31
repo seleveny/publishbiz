@@ -12,22 +12,40 @@ const flyStyle: React.CSSProperties = {
 };
 
 const cardStyle: React.CSSProperties = {
+    width: 'calc(8vw)',
+    height: 'calc(12vw)',
     textAlign: 'center',
+    justifyItems: 'center',
+    justifyContent: 'center',
     color: 'white',
     backgroundColor: 'transparent',
 }
 
 const imageStyle: React.CSSProperties = {
-    width: '80px',
-    height: '80px',
+    display: 'flex',
+    width: 'calc(6vw)',
+    height: 'calc(6vw)',
     backgroundColor: 'transparent',
 }
+
+const headerStyle: React.CSSProperties = {
+    height: '30%', // 设置 Header 高度为 30%
+    backgroundColor: 'transparent', // 设置 Header 背景色为半透明黑色
+};
+
+const bodyStyle: React.CSSProperties = {
+    padding: '10px',
+    paddingTop: 'calc(2vh)',
+    alignItems: 'center',
+    height: '40%', // 设置 Body 高度为 70%
+    backgroundColor: 'transparent', // 设置 Body 背景色为半透明黑色
+};
 
 const Contact: React.FC = () => {
     return (
         <Space style={flyStyle}>
-            <Card title="联系我们" bordered={true} style={cardStyle}>
-                <Image src="../pic/contactqr.png" style={imageStyle} preview={false} />
+            <Card title="联系我们" bordered={true} style={cardStyle} headStyle={headerStyle} bodyStyle={bodyStyle}>
+                <Image src="../pic/contact.png" style={imageStyle} preview={false} />
             </Card>
         </Space>
     );
