@@ -4,7 +4,7 @@ import {Flex, Typography} from "antd";
 const {Title} = Typography;
 
 const publishImageStyle: React.CSSProperties = {
-    width: 'calc(96vw)',
+    width: 'calc(90vw)',
     height: 'calc(90vh)',
     borderRadius: '20px',
     borderTopLeftRadius: '20px',

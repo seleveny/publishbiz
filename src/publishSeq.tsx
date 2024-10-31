@@ -5,14 +5,14 @@ import PublishItem from "./publishItem.tsx";
 const {Title} = Typography;
 
 const publishImageStyle: React.CSSProperties = {
-    width: 'calc(96vw)',
+    width: 'calc(90vw)',
     height: 'calc(90vh)',
     borderRadius: '20px',
     borderTopLeftRadius: '20px',
     borderTopRightRadius: '20px',
     borderBottomLeftRadius: '20px',
     borderBottomRightRadius: '20px',
-    background: 'linear-gradient(0deg,#969087, #E1D2BB)', // 这里是渐变色的示例
+    background: 'linear-gradient(0deg,#FFFF00, #494268)', // 这里是渐变色的示例
 }
 
 

@@ -1,4 +1,7 @@
 /*导航栏*/
+.ant-layout-header {
+    padding: 0;
+}
 
 .ant-menu-dark.ant-menu-horizontal >.ant-menu-item {
     background-color: black;

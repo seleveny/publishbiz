@@ -4,7 +4,7 @@ import './App.css';
 
 const PublishSeqStyle: React.CSSProperties = {
     position: 'absolute',
-    paddingTop: 'calc(20vh)',
+    paddingTop: 'calc(35vh)',
     width: 'calc(60vw)',
     height: 'calc(60vh)',
     display: 'flex',

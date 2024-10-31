@@ -2,6 +2,7 @@ import React from 'react';
 import {Flex, Image, Layout} from 'antd';
 import Navigate from './navigate';
 import MultiText from './multiText.tsx';
+import './App.css';
 
 const {Header, Footer, Content} = Layout;
 
@@ -11,7 +12,6 @@ const headerStyle: React.CSSProperties = {
     textAlign: 'center',
     color: '#fff',
     height: 64,
-    paddingInline: 48,
     lineHeight: '64px',
     backgroundColor: 'black',
 };
@@ -27,7 +27,7 @@ const contentStyle: React.CSSProperties = {
 const footerStyle: React.CSSProperties = {
     textAlign: 'center',
     color: '#fff',
-    backgroundColor: 'black',
+    backgroundColor: '#161617CC',
 };
 
 
@@ -40,10 +40,10 @@ const layoutStyle: React.CSSProperties = {
 };
 
 const iconStyle: React.CSSProperties = {
-    marginLeft: 16,
-    marginRight: 32,
-    width: '26px',
-    height: '26px',
+    marginLeft: 'calc(10vw)',
+    marginRight: 'calc(5vw)',
+    width: '40px',
+    height: '40px',
 };
 
 const App: React.FC = () => (
@@ -51,7 +51,7 @@ const App: React.FC = () => (
         {/*头部内容*/}
         <Header style={headerStyle}>
             <Flex>
-                <Image src="../pic/logo.jpeg" preview={false} style={iconStyle}/>
+                <Image src="../pic/logo.png" preview={false} style={iconStyle}/>
                 <Navigate/>
             </Flex>
         </Header>
