@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col, Flex, Row, Typography} from "antd";
 
-const {Title} = Typography;
+const {Title, Paragraph, Text} = Typography;
 
 const publishImageStyle: React.CSSProperties = {
     width: 'calc(90vw)',
@@ -42,13 +42,19 @@ const CooperateTypeStyle: React.CSSProperties = {
     justifyContent: 'center',
 }
 
-const style: React.CSSProperties = {
+const containTextStyle: React.CSSProperties = {
     background: '#FFFFFF',
-    minWidth:'calc(25vw)',
+    minWidth: 'calc(25vw)',
     height: 'calc(60vh)',
     textAlign: 'center',
     borderRadius: '1rem',
+    paddingTop: '1rem',
 };
+
+const cooperateTextStyle : React.CSSProperties = {
+    fontSize: '2rem',
+    position: 'relative',
+}
 
 const CooperateType: React.FC = () => {
     return (
@@ -58,13 +64,34 @@ const CooperateType: React.FC = () => {
             <Flex style={CooperateTypeStyle}>
                 <Row gutter={24}>
                     <Col className="gutter-row" span={8}>
-                        <div style={style}>col-6</div>
+                        <div style={containTextStyle}>
+                            <Typography>
+                                <Title style={cooperateTextStyle}>自费出版</Title>
+                                <Paragraph>
+                                    <Text>以自有资金为基础，为您提供专业的图书出版服务。</Text>
+                                </Paragraph>
+                            </Typography>
+                        </div>
                     </Col>
                     <Col className="gutter-row" span={8}>
-                        <div style={style}>col-6</div>
+                        <div style={containTextStyle}>
+                            <Typography>
+                                <Title style={cooperateTextStyle}>公费出版</Title>
+                                <Paragraph>
+                                    <Text>以政府或机构的资金为基础，为您提供专业的图书出版服务。</Text>
+                                </Paragraph>
+                            </Typography>
+                        </div>
                     </Col>
                     <Col className="gutter-row" span={8}>
-                        <div style={style}>col-6</div>
+                        <div style={containTextStyle}>
+                            <Typography>
+                                <Title style={cooperateTextStyle}>合作出版</Title>
+                                <Paragraph>
+                                    <Text>以政府或机构的资金为基础，为您提供专业的图书出版服务。</Text>
+                                </Paragraph>
+                            </Typography>
+                        </div>
                     </Col>
                 </Row>
             </Flex>
