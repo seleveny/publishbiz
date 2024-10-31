@@ -13,7 +13,7 @@ const publishImageStyle: React.CSSProperties = {
     borderTopRightRadius: '20px',
     borderBottomLeftRadius: '20px',
     borderBottomRightRadius: '20px',
-    background: 'linear-gradient(45deg, #3f51b5, #9c27b0)', // 这里是渐变色的示例
+    background: 'linear-gradient(45deg, #3f51b5CC, #9c27b0CC)', // 这里是渐变色的示例
 
 }
 

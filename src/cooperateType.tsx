@@ -11,7 +11,7 @@ const publishImageStyle: React.CSSProperties = {
     borderTopRightRadius: '20px',
     borderBottomLeftRadius: '20px',
     borderBottomRightRadius: '20px',
-    background: 'linear-gradient(45deg,  #F66072, #2CCAE9)', // 这里是渐变色的示例
+    background: 'linear-gradient(-45deg,  #3f51b5CC, #e91e63CC)', // 这里是渐变色的示例
 
 }
 
@@ -46,7 +46,7 @@ const CorpTypeStyle: React.CSSProperties = {
     color: 'transparent', // 设置字体颜色为透明
     backgroundClip: 'text', // 裁剪背景到文字
     WebkitBackgroundClip: 'text', // 兼容 WebKit 浏览器
-    backgroundImage: 'linear-gradient(90deg, #3f51b5, #9c27b0)', // 这里是渐变色的示例
+    backgroundImage: 'linear-gradient(90deg, #FFFFFF, #000000)', // 这里是渐变色的示例
 }
 
 const CooperateType: React.FC = () => {

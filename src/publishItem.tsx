@@ -26,11 +26,6 @@ const items: StepProps[] = [
         description: '',
     },
     {
-        title: '商定出版社',
-        status: 'process',
-        description: '',
-    },
-    {
         title: '签订合同',
         status: 'process',
         description: '',
@@ -46,7 +41,7 @@ const items: StepProps[] = [
         description: '',
     },
     {
-        title: '封面设计',
+        title: '设计封面',
         status: 'process',
         description: '',
     },{
@@ -58,12 +53,7 @@ const items: StepProps[] = [
         title: '定稿',
         status: 'process',
         description: '',
-    },
-    {
-        title: '出版',
-        status: 'process',
-        description: '',
-    },
+    }
 ]
 
 const PublishItem: React.FC = () => {

@@ -11,7 +11,7 @@ const publishImageStyle: React.CSSProperties = {
     borderTopRightRadius: '20px',
     borderBottomLeftRadius: '20px',
     borderBottomRightRadius: '20px',
-    background: 'linear-gradient(45deg,  #009B8D, #FCD301)', // 这里是渐变色的示例
+    background: 'linear-gradient(45deg,  #3f51b5CC, #ff6f00CC)', // 这里是渐变色的示例
 
 }
 
@@ -51,10 +51,24 @@ const AdvantageItemStyle: React.CSSProperties = {
     color: 'white',
     textAlign: 'center',
     fontSize: '4rem',
+    border: '2px dashed white',
+    fontStyle: 'italic',
+    padding: '1rem',
+    borderRadius: '1rem',
+    backgroundColor: '#161717CC'
+}
+
+const AdvantageSpecialItemStyle: React.CSSProperties = {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: '4rem',
     border: '3px dashed white',
     fontStyle: 'italic',
     padding: '1rem',
     borderRadius: '1rem',
+    backgroundClip: 'text', // 裁剪背景到文字
+    WebkitBackgroundClip: 'text', // 兼容 WebKit 浏览器
+    backgroundImage: 'linear-gradient(90deg, #3f51b5CC, #9c27b0CC)', // 这里是渐变色的示例
 }
 
 const Advantage: React.FC = () => {
@@ -68,8 +82,8 @@ const Advantage: React.FC = () => {
                 <div style={AdvantageItemStyle}>费用合理</div>
                 <div style={AdvantageItemStyle}>出版高效</div>
                 <div style={AdvantageItemStyle}>质量保证</div>
-                <div style={AdvantageItemStyle}>学科范围广</div>
-                <div style={AdvantageItemStyle}>退稿率低</div>
+                <div style={AdvantageSpecialItemStyle}>学科范围广</div>
+                <div style={AdvantageSpecialItemStyle}>退稿率低</div>
             </Flex>
         </div>
     );
