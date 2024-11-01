@@ -76,7 +76,7 @@ const serviceItems = [
 
 const ServiceText: React.FC = () => {
     return (
-        <div style={MultiStyle}>
+        <div style={MultiStyle} id={'service-items'}>
             <div style={publishImageStyle}></div>
             <Title style={textStyle}>服务项目</Title>
             <div style={ServiceItemStyle}>

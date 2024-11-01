@@ -58,7 +58,7 @@ const cooperateTextStyle: React.CSSProperties = {
 
 const CooperateType: React.FC = () => {
     return (
-        <div style={MultiStyle}>
+        <div style={MultiStyle} id={'cooperation-methods'}>
             <div style={publishImageStyle}/>
             <Title style={textStyle}>合作方式</Title>
             <Flex style={CooperateTypeStyle}>

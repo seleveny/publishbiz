@@ -71,7 +71,7 @@ const AdvantageSpecialItemStyle: React.CSSProperties = {
 
 const Advantage: React.FC = () => {
     return (
-        <div style={MultiStyle}>
+        <div style={MultiStyle} id={'business-advantages'}>
             <div style={publishImageStyle}/>
             <Title style={textStyle}>业务优势</Title>
             <Flex style={AdvantageTypeStyle}>
