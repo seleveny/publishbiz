@@ -5,7 +5,7 @@ const PublishSeqStyle: React.CSSProperties = {
     position: 'absolute',
     marginTop: 'calc(20vh)',
     width: 'calc(90vw)',
-    height: 'calc(80vh)',
+    height: 'calc(50vh)',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -20,7 +20,7 @@ const publishSeqItemStyle: React.CSSProperties = {
     lineHeight: '6rem',
     padding: '10px',
     borderRadius: '1rem',
-    backgroundColor: '#3f51b5CC'
+    backgroundColor: 'dodgerblue'
 }
 
 
@@ -72,7 +72,7 @@ const rightArrowStyle: React.CSSProperties = {
     height: '0',
     borderTop: '1rem solid transparent',
     borderBottom: '1rem solid transparent',
-    borderLeft: '1rem solid #3f51b5CC',
+    borderLeft: '1rem solid dodgerblue',
     left: '100%',
     marginLeft: '0px',
 }

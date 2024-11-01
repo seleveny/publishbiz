@@ -1,14 +1,7 @@
 import React from "react";
-import {Card, Image, Space} from 'antd';
+import {Card, Image} from 'antd';
 import './App.css';
 
-
-const flyStyle: React.CSSProperties = {
-    display: 'flex',
-    position: 'absolute',
-    color: '#fff',
-    marginTop: 'calc(60vh)',
-};
 
 const cardStyle: React.CSSProperties = {
     width: 'calc(8vw)',
@@ -42,11 +35,9 @@ const bodyStyle: React.CSSProperties = {
 
 const Contact: React.FC = () => {
     return (
-        <Space style={flyStyle}>
-            <Card title="联系我们" bordered={true} style={cardStyle} headStyle={headerStyle} bodyStyle={bodyStyle}>
-                <Image src="../pic/contact.png" style={imageStyle} preview={false}/>
-            </Card>
-        </Space>
+        <Card title="联系我们" bordered={true} style={cardStyle} headStyle={headerStyle} bodyStyle={bodyStyle}>
+            <Image src="../pic/contact.png" style={imageStyle} preview={false}/>
+        </Card>
     );
 };
 

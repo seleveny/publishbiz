@@ -1,6 +1,7 @@
 import React from 'react';
-import {Typography} from "antd";
+import {Space, Typography} from "antd";
 import PublishItem from "./publishItem.tsx";
+import Contact from "./contact.tsx";
 
 const {Title} = Typography;
 
@@ -12,7 +13,7 @@ const publishImageStyle: React.CSSProperties = {
     borderTopRightRadius: '20px',
     borderBottomLeftRadius: '20px',
     borderBottomRightRadius: '20px',
-    background: 'linear-gradient(0deg,#ffd700CC,#3f51b5CC)', // 这里是渐变色的示例
+    background: 'linear-gradient(0deg, #161617CC, #3f51b5CC)', // 这里是渐变色的示例
 }
 
 
@@ -33,6 +34,12 @@ const MultiStyle: React.CSSProperties = {
     position: 'relative',
 }
 
+const flyStyle: React.CSSProperties = {
+    display: 'flex',
+    position: 'absolute',
+    color: '#fff',
+    marginTop: 'calc(60vh)'
+};
 
 const PublishSeq: React.FC = () => {
     return (
@@ -40,6 +47,9 @@ const PublishSeq: React.FC = () => {
             <div style={publishImageStyle}></div>
             <Title style={textStyle}>出版流程</Title>
             <PublishItem/>
+            <Space style={flyStyle}>
+                <Contact/>
+            </Space>
         </div>
     );
 };

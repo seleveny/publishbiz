@@ -1,5 +1,5 @@
 import React from 'react';
-import {Typography} from "antd";
+import {Space, Typography} from "antd";
 import Contact from "./contact.tsx";
 import './App.css';
 
@@ -40,6 +40,13 @@ const MultiStyle: React.CSSProperties = {
     alignItems: 'center',
     position: 'relative',
 }
+const flyStyle: React.CSSProperties = {
+    display: 'flex',
+    position: 'absolute',
+    color: '#fff',
+    marginTop: 'calc(60vh)',
+    marginLeft: 'calc(50vw)',
+};
 
 const CulturalShow: React.FC = () => {
     return (
@@ -47,7 +54,9 @@ const CulturalShow: React.FC = () => {
             <div style={publishImageStyle}/>
             <Title style={textStyle}>图书出版</Title>
             <Title style={subTextStyle}>小小书童，为您服务！</Title>
-            <Contact/>
+            <Space style={flyStyle}>
+                <Contact/>
+            </Space>
         </div>
     );
 };

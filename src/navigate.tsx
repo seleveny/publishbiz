@@ -63,8 +63,7 @@ const Navigate: React.FC = () => {
 function scrollToSection(sectionId: string) {
     scroller.scrollTo(sectionId, {
         smooth: true,
-        duration: 500,
-        offsetTop: 'calc(10vh)',
+        duration: 600,
     });
 }
 
