@@ -50,27 +50,27 @@ const serviceItems = [
     {
         title: '专著出版',
         description: '',
-        image: '../pic/1.jpg',
+        image: '../pic/1.png',
     },
     {
         title: '教辅/教材出版',
         description: '',
-        image: '../pic/2.jpg',
+        image: '../pic/2.png',
     },
     {
-        title: '杂志书籍出版',
+        title: '年鉴志书出版',
         description: '',
-        image: '../pic/3.jpg',
+        image: '../pic/3.png',
     },
     {
         title: '科普图书出版',
         description: '',
-        image: '../pic/4.jpg',
+        image: '../pic/4.png',
     },
     {
         title: '大众图书出版',
         description: '',
-        image: '../pic/5.jpg',
+        image: '../pic/5.png',
     }
 ]
 
