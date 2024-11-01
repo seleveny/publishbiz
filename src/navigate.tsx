@@ -1,39 +1,50 @@
 import React from 'react';
 import {Menu, MenuProps} from 'antd';
 import './App.css';
+import { scroller } from 'react-scroll';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
 const items: MenuItem[] = [
     {
-        label: '学术专注出版',
-        key: '1',
+        label: '图书出版',
+        key: 'book-publishing',
         className: 'custom-menu-item',
+        onClick: (item  ) => {
+            scrollToSection(item.key);
+        },
     },
     {
-        label: '小说文学出版',
-        key: '2',
+        label: '服务项目',
+        key: 'service-items',
         className: 'custom-menu-item',
+        onClick: (item  ) => {
+            scrollToSection(item.key);
+        },
     },
     {
-        label: '个人传记出版',
-        key: '3',
+        label: '业务优势',
+        key: 'business-advantages',
         className: 'custom-menu-item',
+        onClick: (item  ) => {
+            scrollToSection(item.key);
+        },
     },
     {
-        label: '教材教辅出版',
-        key: '4',
+        label: '合作方式',
+        key: 'cooperation-methods',
         className: 'custom-menu-item',
+        onClick: (item  ) => {
+            scrollToSection(item.key);
+        },
     },
     {
-        label: '人文科学出版',
-        key: '5',
+        label: '出版流程',
+        key: 'publishing-process',
         className: 'custom-menu-item',
-    },
-    {
-        key: '6',
-        label: '商业传记出版',
-        className: 'custom-menu-item'
+        onClick: (item  ) => {
+            scrollToSection(item.key);
+        },
     }
 ];
 
@@ -48,5 +59,13 @@ const Navigate: React.FC = () => {
         <Menu mode="horizontal" style={NavigateStyle} theme={"dark"} items={items}/>
     );
 };
+
+function scrollToSection(sectionId: string) {
+    scroller.scrollTo(sectionId, {
+        smooth: true,
+        duration: 500,
+        offsetTop: 100,
+    });
+}
 
 export default Navigate;

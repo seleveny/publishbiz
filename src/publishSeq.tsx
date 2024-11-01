@@ -36,7 +36,7 @@ const MultiStyle: React.CSSProperties = {
 
 const PublishSeq: React.FC = () => {
     return (
-        <div style={MultiStyle}>
+        <div style={MultiStyle} id='publishing-process'>
             <div style={publishImageStyle}></div>
             <Title style={textStyle}>出版流程</Title>
             <PublishItem/>
