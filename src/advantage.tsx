@@ -17,7 +17,7 @@ const publishImageStyle: React.CSSProperties = {
 
 const textStyle: React.CSSProperties = {
     marginTop: 'calc(8vh)',
-    fontSize: '3rem',
+    fontSize: 'calc(3vw)',
     marginBottom: 0,
     position: 'absolute',
     alignItems: 'center',
@@ -44,28 +44,28 @@ const AdvantageTypeStyle: React.CSSProperties = {
     columnGap: 'calc(5vw)',
     rowGap: '0px',
     flexWrap: 'wrap',
-    gap: '4rem',
+    gap: '4vw',
 }
 
 const AdvantageItemStyle: React.CSSProperties = {
     color: 'white',
     textAlign: 'center',
-    fontSize: '4rem',
+    fontSize: '4vw',
     border: '2px dashed white',
     fontStyle: 'italic',
-    padding: '1rem',
-    borderRadius: '1rem',
+    padding: '1vw',
+    borderRadius: '1vw',
     backgroundColor: '#161717CC'
 }
 
 const AdvantageSpecialItemStyle: React.CSSProperties = {
     color: 'white',
     textAlign: 'center',
-    fontSize: '4rem',
+    fontSize: '4vw',
     border: '3px solid white',
     fontStyle: 'italic',
-    padding: '1rem',
-    borderRadius: '1rem',
+    padding: '1vw',
+    borderRadius: '1vw',
     backgroundColor: '#FF6600CC', // 这里是渐变色的示例
 }
 

@@ -17,7 +17,7 @@ const publishImageStyle: React.CSSProperties = {
 
 const textStyle: React.CSSProperties = {
     marginTop: 'calc(8vh)',
-    fontSize: '3rem',
+    fontSize: 'calc(3vw)',
     marginBottom: 0,
     position: 'absolute',
     alignItems: 'center',
@@ -34,10 +34,10 @@ const MultiStyle: React.CSSProperties = {
 
 const CooperateTypeStyle: React.CSSProperties = {
     display: 'flex',
-    marginTop: 'calc(8vh + 3rem)',
+    marginTop: 'calc(8vh + 3vw)',
     position: 'absolute',
-    width: 'calc(90vw)',
-    height: 'calc(82vh - 3rem)',
+    width: 'calc(84vw)',
+    height: 'calc(82vh - 3vw)',
     alignItems: 'center',
     justifyContent: 'center',
 }
@@ -47,12 +47,12 @@ const containTextStyle: React.CSSProperties = {
     minWidth: 'calc(25vw)',
     height: 'calc(60vh)',
     textAlign: 'center',
-    borderRadius: '1rem',
-    paddingTop: '1rem',
+    borderRadius: '1vw',
+    paddingTop: '1vw',
 };
 
 const cooperateTextStyle: React.CSSProperties = {
-    fontSize: '2rem',
+    fontSize: '2vw',
     position: 'relative',
 }
 

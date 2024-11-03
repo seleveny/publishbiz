@@ -9,11 +9,20 @@ interface ServiceItemProps {
     description: string;
 }
 
+const ServiceCardStyle: React.CSSProperties = {
+    width: "calc(12vw)",
+    height: 'calc(18vw)',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingBottom: 'calc(1vw)',
+}
+
 const ServiceItem: React.FC<ServiceItemProps> = ({image, title, description}) => {
     return (
         <Card
             hoverable
-            style={{minWidth: "calc(12vw)", height: 'calc(18vw)'}}
+            style={ServiceCardStyle}
             cover={<img src={image} alt="example" style={{height: 'calc(14vw)', width: 'auto'}}/>}
             className="ant-card-animation"
         >

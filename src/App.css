@@ -26,6 +26,7 @@
     color: white;
 }
 
+
 /*服务项目*/
 .ant-card-animation:hover {
     transform: scale(1.03);
@@ -42,8 +43,8 @@
     color: white;
 }
 
-.ant-card-meta-title {
-    font-size: 1.5rem !important;
-}
 
 /*出版流程*/
+.ant-card-meta-title {
+    font-size: 1.2vw !important;
+}

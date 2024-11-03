@@ -17,7 +17,7 @@ const publishImageStyle: React.CSSProperties = {
 
 const textStyle: React.CSSProperties = {
     marginTop: 'calc(8vh)',
-    fontSize: '3rem',
+    fontSize: 'calc(3vw)',
     marginBottom: 0,
     position: 'absolute',
     alignItems: 'center',

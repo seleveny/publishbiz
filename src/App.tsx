@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Flex, Image, Layout} from 'antd';
 import Navigate from './navigate';
 import MultiText from './multiText.tsx';
@@ -45,28 +45,50 @@ const iconStyle: React.CSSProperties = {
     height: '40px',
 };
 
-const App: React.FC = () => (
-    <Flex gap="middle" style={layoutStyle} vertical>
-        {/*头部内容*/}
-        <Header style={headerStyle}>
-            <Flex vertical={true} wrap={true}>
-                <Image src="../pic/logo.png" preview={false} style={iconStyle}/>
-                <Navigate/>
-            </Flex>
-        </Header>
-        {/*主体内容*/}
-        <Content style={contentStyle}>
-            <Flex vertical={true} wrap={true}>
-                <MultiText/>
-            </Flex>
-        </Content>
-        {/*底部内容*/}
-        <Footer style={footerStyle}>
-            <Flex vertical={true} wrap={true}>
-                京口区书童办公服务工作室
-            </Flex>
-        </Footer>
-    </Flex>
-);
+const App: React.FC = () => {
+    useEffect(() => {
+        const checkOrientation = () => {
+            if (window.orientation === 0 || window.orientation === 180) {
+                // 竖屏模式
+                document.body.style.transform = 'rotate(90deg)';
+            } else {
+                // 横屏模式
+                document.body.style.transform = 'rotate(0deg)';
+            }
+        };
+
+        checkOrientation();
+
+        window.addEventListener('orientationchange', checkOrientation);
+
+        return () => {
+            window.removeEventListener('orientationchange', checkOrientation);
+        };
+    }, []);
+
+    return (
+        <Flex gap="middle" style={layoutStyle} vertical>
+            {/*头部内容*/}
+            <Header style={headerStyle}>
+                <Flex vertical={true} wrap={true}>
+                    <Image src="../pic/logo.png" preview={false} style={iconStyle}/>
+                    <Navigate/>
+                </Flex>
+            </Header>
+            {/*主体内容*/}
+            <Content style={contentStyle}>
+                <Flex vertical={true} wrap={true}>
+                    <MultiText/>
+                </Flex>
+            </Content>
+            {/*底部内容*/}
+            <Footer style={footerStyle}>
+                <Flex vertical={true} wrap={true}>
+                    京口区书童办公服务工作室
+                </Flex>
+            </Footer>
+        </Flex>
+    );
+}
 
 export default App;

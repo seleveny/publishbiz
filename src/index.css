@@ -13,5 +13,6 @@ body {
     display: flex;
     flex: 1; /* 让 body 元素填充 :root 元素的剩余空间 */
     padding: 0;
-    font-size: 1rem;
+    font-size: 1vw;
 }
+

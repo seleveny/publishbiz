@@ -16,10 +16,10 @@ const PublishSeqStyle: React.CSSProperties = {
 const publishSeqItemStyle: React.CSSProperties = {
     color: 'white',
     textAlign: 'center',
-    fontSize: '2rem',
-    lineHeight: '6rem',
-    padding: '10px',
-    borderRadius: '1rem',
+    fontSize: '2vw',
+    lineHeight: '5vw',
+    padding: '0.3vw',
+    borderRadius: '1vw',
     backgroundColor: 'dodgerblue'
 }
 
@@ -30,11 +30,11 @@ const publishSeqItemStyle: React.CSSProperties = {
 //     transform: 'translateY(-100%)',
 //     width: '0',
 //     height: '0',
-//     borderBottom: '1rem solid #3f51b5CC',
-//     borderLeft: '1rem solid transparent',
-//     borderRight: '1rem solid transparent',
+//     borderBottom: '1vw solid #3f51b5CC',
+//     borderLeft: '1vw solid transparent',
+//     borderRight: '1vw solid transparent',
 //     left: '50%',
-//     marginLeft: '-1rem',
+//     marginLeft: '-1vw',
 // }
 //
 // const downArrowStyle: React.CSSProperties = {
@@ -43,12 +43,12 @@ const publishSeqItemStyle: React.CSSProperties = {
 //     transform: 'translateY(-100%)',
 //     width: '0',
 //     height: '0',
-//     borderTop: '1rem solid #3f51b5CC',
-//     borderLeft: '1rem solid transparent',
-//     borderRight: '1rem solid transparent',
+//     borderTop: '1vw solid #3f51b5CC',
+//     borderLeft: '1vw solid transparent',
+//     borderRight: '1vw solid transparent',
 //     left: '50%',
-//     marginLeft: '-1rem',
-//     marginTop: '1rem',
+//     marginLeft: '-1vw',
+//     marginTop: '1vw',
 // }
 //
 // const leftArrowStyle: React.CSSProperties = {
@@ -57,9 +57,9 @@ const publishSeqItemStyle: React.CSSProperties = {
 //     transform: 'translateY(-50%)',
 //     width: '0',
 //     height: '0',
-//     borderTop: '1rem solid transparent',
-//     borderBottom: '1rem solid transparent',
-//     borderRight: '1rem solid #3f51b5CC',
+//     borderTop: '1vw solid transparent',
+//     borderBottom: '1vw solid transparent',
+//     borderRight: '1vw solid #3f51b5CC',
 //     right: '100%',
 //     marginRight: '0px',
 // }
@@ -70,9 +70,9 @@ const rightArrowStyle: React.CSSProperties = {
     transform: 'translateY(-50%)',
     width: '0',
     height: '0',
-    borderTop: '1rem solid transparent',
-    borderBottom: '1rem solid transparent',
-    borderLeft: '1rem solid dodgerblue',
+    borderTop: '1vw solid transparent',
+    borderBottom: '1vw solid transparent',
+    borderLeft: '1vw solid dodgerblue',
     left: '100%',
     marginLeft: '0px',
 }
@@ -80,7 +80,7 @@ const rightArrowStyle: React.CSSProperties = {
 const layoutStyle: React.CSSProperties = {
     position: 'relative',
     display: 'inline-block',
-    margin: '2rem'
+    margin: '2vw'
 }
 
 
