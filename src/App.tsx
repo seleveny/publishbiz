@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Flex, Image, Layout} from 'antd';
 import Navigate from './navigate';
 import MultiText from './multiText.tsx';
@@ -46,26 +46,6 @@ const iconStyle: React.CSSProperties = {
 };
 
 const App: React.FC = () => {
-    useEffect(() => {
-        const checkOrientation = () => {
-            if (window.orientation === 0 || window.orientation === 180) {
-                // 竖屏模式
-                document.body.style.transform = 'rotate(90deg)';
-            } else {
-                // 横屏模式
-                document.body.style.transform = 'rotate(0deg)';
-            }
-        };
-
-        checkOrientation();
-
-        window.addEventListener('orientationchange', checkOrientation);
-
-        return () => {
-            window.removeEventListener('orientationchange', checkOrientation);
-        };
-    }, []);
-
     return (
         <Flex gap="middle" style={layoutStyle} vertical>
             {/*头部内容*/}
