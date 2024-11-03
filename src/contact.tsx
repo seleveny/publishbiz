@@ -1,16 +1,21 @@
 import React from "react";
-import {Card, Image} from 'antd';
+import {Flex, Image} from 'antd';
 import './App.css';
 
 
 const cardStyle: React.CSSProperties = {
     width: 'calc(8vw)',
-    height: 'calc(12vw)',
+    height: 'calc(10vw)',
     textAlign: 'center',
     justifyItems: 'center',
     justifyContent: 'center',
     color: 'white',
     backgroundColor: 'transparent',
+    paddingTop: 'calc(1vw)',
+    flexWrap: 'wrap',
+    border: '1px solid white',
+    borderRadius: 'calc(0.8vw)',
+    lineHeight: '100%',
 }
 
 const imageStyle: React.CSSProperties = {
@@ -21,23 +26,22 @@ const imageStyle: React.CSSProperties = {
 }
 
 const headerStyle: React.CSSProperties = {
-    height: '30%', // 设置 Header 高度为 30%
     backgroundColor: 'transparent', // 设置 Header 背景色为半透明黑色
+    fontSize: 'calc(1.2vw)',
+    justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center',
 };
 
-const bodyStyle: React.CSSProperties = {
-    paddingTop: 'calc(1vw)',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '40%', // 设置 Body 高度为 70%
-    backgroundColor: 'transparent', // 设置 Body 背景色为半透明黑色
-};
 
 const Contact: React.FC = () => {
     return (
-        <Card title="联系我们" bordered={true} style={cardStyle} headStyle={headerStyle} bodyStyle={bodyStyle}>
-            <Image src="../pic/contact.png" style={imageStyle} preview={false}/>
-        </Card>
+        <div>
+            <Flex style={cardStyle}>
+                <div style={headerStyle}>联系我们</div>
+                <Image src="../pic/contact.png" style={imageStyle} preview={false}/>
+            </Flex>
+        </div>
     );
 };
 

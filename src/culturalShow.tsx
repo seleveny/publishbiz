@@ -21,15 +21,15 @@ const textStyle: React.CSSProperties = {
     marginTop: 'calc(12vh)',
     position: 'absolute',
     alignItems: 'center',
-    fontSize: '14rem',
+    fontSize: 'calc(12vw)',
     color: "white",
 }
 
 const subTextStyle: React.CSSProperties = {
-    marginTop: 'calc(12vh + 20rem)',
+    marginTop: 'calc(12vh + 17vw)',
     position: 'absolute',
     alignItems: 'center',
-    fontSize: '3rem',
+    fontSize: 'calc(3.5vw)',
     color: "#B4D9F3",
     fontStyle: 'italic', // 设置字体为斜体
 }
