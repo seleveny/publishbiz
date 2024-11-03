@@ -36,15 +36,17 @@ const AdvantageTypeStyle: React.CSSProperties = {
     display: 'flex',
     flexDirection: 'row',
     position: 'absolute',
-    marginTop: 'calc(30vh)',
+    marginTop: 'calc(16vh + 3vw)',
     width: 'calc(90vw)',
+    height: 'calc(58vh - 7vw)',
     alignItems: 'center',
     justifyContent: 'center',
     justifyItems: 'space-evenly',
-    columnGap: 'calc(5vw)',
-    rowGap: '0px',
+    columnGap: '2vw',
+    rowGap: '2vw',
     flexWrap: 'wrap',
-    gap: '4vw',
+    gridColumnGap: '2vw',
+    gridRowGap: '2vw',
 }
 
 const AdvantageItemStyle: React.CSSProperties = {
@@ -55,7 +57,8 @@ const AdvantageItemStyle: React.CSSProperties = {
     fontStyle: 'italic',
     padding: '1vw',
     borderRadius: '1vw',
-    backgroundColor: '#161717CC'
+    lineHeight: '6vw',
+    backgroundColor: '#161717CC',
 }
 
 const AdvantageSpecialItemStyle: React.CSSProperties = {
@@ -66,6 +69,7 @@ const AdvantageSpecialItemStyle: React.CSSProperties = {
     fontStyle: 'italic',
     padding: '1vw',
     borderRadius: '1vw',
+    lineHeight: '6vw',
     backgroundColor: '#FF6600CC', // 这里是渐变色的示例
 }
 
