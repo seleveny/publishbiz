@@ -21,7 +21,7 @@ const textStyle: React.CSSProperties = {
     marginTop: 'calc(12vh)',
     position: 'absolute',
     alignItems: 'center',
-    fontSize: 'calc(12vw)',
+    fontSize: 'calc(11vw)',
     color: "white",
 }
 
