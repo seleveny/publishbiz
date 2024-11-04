@@ -3,7 +3,7 @@ import './App.css';
 
 const PublishSeqStyle: React.CSSProperties = {
     position: 'absolute',
-    marginTop: 'calc(20vh)',
+    marginTop: 'calc(15vh)',
     width: 'calc(90vw)',
     height: 'calc(50vh)',
     display: 'flex',
