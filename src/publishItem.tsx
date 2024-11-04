@@ -112,7 +112,7 @@ const PublishItem: React.FC = () => {
                 <div style={rightArrowStyle}></div>
             </div>
             <div style={layoutStyle}>
-                <div style={publishSeqItemStyle}>定稿</div>
+                <div style={publishSeqItemStyle}>定稿硬刷</div>
             </div>
         </div>
     );
